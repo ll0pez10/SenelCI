@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+:root {
+  --amareloSenel: #f6c135;
+  --pretoSenel: #000000;
+  --rosaSenel: #ff96ac;
+  --mainTransition: all 0.4s linear;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+}
+/* -------------------- Titulo de cada row --------------------*/
+h3 {
+  text-transform: capitalize;
+  text-decoration-color: var(--amareloSenel);
+  text-decoration: underline;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 300px;
+}
+/* -------------------- PATROCINIO --------------------*/
+
+#patrocinio {
+  text-align: center;
+  background-image: url("PHOTO.jpg");
+  background-color: turquoise;
+  box-sizing: border-box;
+  width: 400px;
+  height: 600px;
+}
+
+/* -------------------- FOOTER --------------------*/
+
+#footer {
+  position: relative;
+  height: 300px;
+  margin-top: -300px;
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: #18181a;
+}
+
+.inner_footer {
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+
+.inner_footer .contact {
+  width: 35%;
+  float: left;
+  height: 100%;
+  padding-left: 0;
+  display: block;
+  color: white;
+  font-weight: 200;
+  display: block;
+  /*padding-top: 20px;*/
+}
+
+.inner_footer .contact h1 {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.inner_footer .footer_third {
+  width: calc(21.666666667% - 20px);
+  margin-right: 20px;
+  float: left;
+  height: 100%;
+}
+
+.inner_footer .footer_third:last-child {
+  margin-right: 0;
+}
+
+.inner_footer .footer_third h1 {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.inner_footer .footer_third a {
+  color: white;
+  display: block;
+  font-weight: 200;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.inner_footer .footer_third li {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 20px;
+}
+
+.inner_footer .contact span,
+.inner_footer .contact span a {
+  color: white;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer .inner_footer {
+    width: 90%;
+  }
+
+  .inner_footer .logo_container,
+  .inner_footer .footer_third {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
