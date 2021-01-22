@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 class EventosModel extends Model
 {
     protected $table      = 'patrocinadores';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'sponsor_id';
 
     protected $returnType     = 'array';
     //protected $useSoftDeletes = true;

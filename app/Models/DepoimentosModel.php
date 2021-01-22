@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 class EventosModel extends Model
 {
     protected $table      = 'depoimentos';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'depoimento_id';
 
     protected $returnType     = 'array';
     //protected $useSoftDeletes = true;

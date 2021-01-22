@@ -4,8 +4,8 @@ use CodeIgniter\Model;
 
 class EventosModel extends Model
 {
-    protected $table      = 'fotos';
-    protected $primaryKey = 'foto_id';
+    protected $table      = 'equipe';
+    protected $primaryKey = 'team_id';
 
     protected $returnType     = 'array';
     //protected $useSoftDeletes = true;

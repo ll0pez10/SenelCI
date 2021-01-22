@@ -7,11 +7,11 @@ use App\Models\PatrocinadoresModel;
 use App\Models\ProgramacaoModel;
 
 class Edicoes{
-    public function eventos(){
+    public function eventos($evento_id){
         $model = new EventosModel();
-        $eventos = $model->findAll();
+        $eventos = $model->findAll($evento_id);
 
-        return view('partials/equipe', ['eventos'=> $eventos]);
+        return view('partials/tema', ['eventos'=> $eventos]);
     }
     public function depoimentos($ano){
         $model = new DepoimentosModel();
@@ -31,8 +31,8 @@ class Edicoes{
 
         return view('partials/patrocinadores', ['patrocinadores'=> $patrocinadores]);
     }
-    public function programcao($ano){
-        $model = new PrgramacaoModel();
+    public function programacao($ano){
+        $model = new ProgramacaoModel();
         $programacao = $model->find($ano);
 
         return view('partials/programacao', ['programacao'=> $programacao]);

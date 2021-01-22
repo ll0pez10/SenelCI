@@ -1,10 +1,11 @@
 <?php namespace App\Controllers;
 
-class Home extends BaseController
+class Edicoes extends BaseController
 {
 	public function index(){
-		
-		return view('home');
+		$ano = 2019;
+		$id = 1;
+		return view('paginas/senel', ["ano" => $ano, "id"=> $id]);
 	}
 
 	function show404(){
