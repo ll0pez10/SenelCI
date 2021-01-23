@@ -1433,3 +1433,50 @@ CRITICAL - 2021-01-22 18:32:57 --> Invalid file: home.php
 #5 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 D:\xampp\htdocs\SenelCI\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2021-01-22 18:46:06 --> Undefined variable: ano
+#0 D:\xampp\htdocs\SenelCI\app\Controllers\Edicoes.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 9, Array)
+#1 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Edicoes->edicao()
+#2 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edicoes))
+#3 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SenelCI\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-22 18:50:37 --> Return value of CodeIgniter\View\Cell::render() must be of the type string, null returned
+#0 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesEdi...')
+#1 D:\xampp\htdocs\SenelCI\app\Views\paginas\senel.php(7): view_cell('\\App\\Libraries\\...', Array)
+#2 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('paginas/senel', Array, true)
+#4 D:\xampp\htdocs\SenelCI\app\Controllers\Edicoes.php(9): view('paginas/senel')
+#5 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Edicoes->edicao()
+#6 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edicoes))
+#7 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\SenelCI\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-01-22 18:59:25 --> Undefined variable: view
+#0 D:\xampp\htdocs\SenelCI\app\Controllers\Edicoes.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 9, Array)
+#1 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Edicoes->edicao()
+#2 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edicoes))
+#3 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\SenelCI\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-01-22 18:59:51 --> Undefined variable: view
+#0 D:\xampp\htdocs\SenelCI\app\Libraries\Edicoes.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 27, Array)
+#1 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\View\Cell.php(156): App\Libraries\Edicoes->fotos(Array)
+#2 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesEdi...')
+#3 D:\xampp\htdocs\SenelCI\app\Views\paginas\senel.php(9): view_cell('\\App\\Libraries\\...', Array)
+#4 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('paginas/senel', Array, true)
+#6 D:\xampp\htdocs\SenelCI\app\Controllers\Edicoes.php(11): view('paginas/senel')
+#7 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Edicoes->edicao()
+#8 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edicoes))
+#9 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\SenelCI\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-01-22 19:14:05 --> Invalid file: home.php
+#0 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+#1 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('home', Array, true)
+#2 D:\xampp\htdocs\SenelCI\app\Controllers\Home.php(7): view('home')
+#3 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\SenelCI\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
