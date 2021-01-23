@@ -1,9 +1,9 @@
 <div class="row">
-    <?php foreach($fotos as $foto):?>
-        <a href="<?= $caminho ?>">
-            <img src="<?= $caminho ?>" class="img-fluid">
+    <!--php foreach($fotos as $foto):?>
+        <a href=" $caminho ?>">
+            <img src=" $caminho ?>" class="img-fluid">
         </a>
-    <?php endforeach; ?>
+    <endforeach; -->
 </div>
 
 <script>

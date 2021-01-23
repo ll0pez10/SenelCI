@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class EventosModel extends Model
+class PatrocinadoresModel extends Model
 {
     protected $table      = 'patrocinadores';
     protected $primaryKey = 'sponsor_id';

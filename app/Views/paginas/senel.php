@@ -1,10 +1,10 @@
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?> 
 <main id="main">
-    <?= view_cell('\App\Libraries\Edicoes::eventos', $id) ?>
-    <?= view_cell('\App\Libraries\Edicoes::programacao', $ano) ?>
-    <?= view_cell('\App\Libraries\Edicoes::patrocinadores', $ano) ?>
-    <?= view_cell('\App\Libraries\Edicoes::depoimentos', $ano) ?>
-    <?= view_cell('\App\Libraries\Edicoes::fotos', $ano) ?>
+    <?php view_cell('\App\Libraries\Edicoes::eventos', ['evento_id' => 1]) ?>
+    <?php view_cell('\App\Libraries\Edicoes::programacao', ['ano' => 2019]) ?>
+    <?php view_cell('\App\Libraries\Edicoes::patrocinadores', ['ano' => 2019]) ?>
+    <?php view_cell('\App\Libraries\Edicoes::depoimentos', ['ano' => 2019]) ?>
+    <?php view_cell('\App\Libraries\Edicoes::fotos', ['ano' => 2019]) ?>
 </main><!-- End #main -->
 <?= $this->endSection() ?>

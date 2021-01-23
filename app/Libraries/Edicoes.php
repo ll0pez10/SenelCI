@@ -7,34 +7,60 @@ use App\Models\PatrocinadoresModel;
 use App\Models\ProgramacaoModel;
 
 class Edicoes{
-    public function eventos($evento_id){
+    public function eventos(array $params=[]){
         $model = new EventosModel();
-        $eventos = $model->findAll($evento_id);
+        $eventos = $model->findAll($params['evento_id']);
 
-        return view('partials/tema', ['eventos'=> $eventos]);
+        echo "<pre>";
+        print_r ($eventos);
+        echo "</pre>";
+        
+        return view('partials/tema', ['eventos' => $eventos[0]]);
     }
-    public function depoimentos($ano){
+    public function depoimentos(array $params=[]){
         $model = new DepoimentosModel();
-        $depoimentos = $model->find($ano);
+        $depoimentos = $model->findAll($params['ano']);
 
-        return view('partials/depoimentos', ['depoimento'=> $depoimentos]);
+        echo "<pre>";
+        print_r ($depoimentos);
+        echo "</pre>";
+
+
+        return view('partials/depoimentos', ['depoimento'=> $depoimentos[0]]);
     }
-    public function fotos($ano){
+    public function fotos(array $params=[]){
         $model = new FotosModel();
-        $fotos = $model->find($ano);
+        $fotos = $model->findAll($params['ano']);
 
-        return view('partials/fotos', ['fotos'=> $fotos]);
+        echo "<pre>";
+        print_r ($fotos);
+        echo "</pre>";
+        $data = ['fotos'=> $fotos];
+
+        return view('partials/fotos', $data);
     }
-    public function patrocinadores($ano){
+    public function patrocinadores(array $params=[]){
         $model = new PatrocinadoresModel();
-        $patrocinadores = $model->find($ano);
-
-        return view('partials/patrocinadores', ['patrocinadores'=> $patrocinadores]);
+        $patrocinadores = $model->findAll($params['ano']);
+        
+        echo "<pre>";
+        print_r ($patrocinadores);
+        echo "</pre>";
+        $patrocinadores = ['patrocinadores'=> $patrocinadores];
+        
+        return view('partials/patrocinadores', $patrocinadores);
     }
-    public function programacao($ano){
+    public function programacao(array $params=[]){
         $model = new ProgramacaoModel();
-        $programacao = $model->find($ano);
+        $programacao = $model->findAll($params['ano']);
 
-        return view('partials/programacao', ['programacao'=> $programacao]);
+        
+        echo "<pre>";
+        print_r ($programacao);
+        echo "</pre>";
+        $programacao = ['programacao'=> $programacao[0]];
+        
+
+        return view('partials/programacao', $programacao);
     }
 }

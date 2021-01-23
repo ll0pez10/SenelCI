@@ -9,7 +9,6 @@
     <!-- Google fonts: Raleway-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
     <!-- CSS -->
-    <?php echo link_tag('/assets/vendor/font-awesome/css/font-awesome.min.css'); ?>
     <?php echo link_tag('https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css'); ?>
     <?php echo link_tag('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'); ?>
     <?php echo link_tag('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'); ?>

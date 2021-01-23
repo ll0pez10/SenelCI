@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class EventosModel extends Model
+class TeamModel extends Model
 {
     protected $table      = 'equipe';
     protected $primaryKey = 'team_id';
