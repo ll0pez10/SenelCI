@@ -2,23 +2,31 @@
     <h3>Patrocinadores</h3>
     <div class="row">
         <?php foreach($patrocinadores as $sponsor):?>
-            <div class="col-xs-1-12">
-              <div class="card">
+        <div class="col-xs-1-12">
+              <div class="card" style="width: 18rem;">
+                <?php 
+                  $imageProperties = [
+                    'src' => $sponsor['logo'],
+                    'alt' => $sponsor['nome'],
+                    'class' => 'card-img-top'
+                  ];
+
+                  echo img($imageProperties);
+                ?>
                 <div class="card-body">
-                  <img src="<?php [$sponsor['logo']]?>"  class = "card-img-top" alt="">
-                  <h3 class="card-title"><?=$sponsor['nome']?></h3>
+                  <h5 class="card-title"><?=$sponsor['nome']?></h5>
                   <?php if($sponsor['categoria'] == "Platina"):?>
-                      <button type="button" class="btn btn-primary"></button>
+                      <a href="#" class="btn btn-primary"><?= $sponsor['categoria']?></a>
                   <?php elseif($sponsor['categoria'] == "Ouro"):?>
-                      <button type="button" class="btn btn-warning"></button>
+                      <a href="#" class="btn btn-warning"><?= $sponsor['categoria']?></a>
                   <?php elseif($sponsor['categoria'] == "Prata"):?>
-                      <button type="button" class="btn btn-secondary"></button>
+                      <a href="#" class="btn btn-secondary"><?= $sponsor['categoria']?></a>
                   <?php else:?>
-                      <button type="button" class="btn btn-dark"></button>
+                      <a href="#" class="btn btn-dark"><?= $sponsor['categoria']?></a>
                   <?php endif; ?>
                 </div>
               </div>
-            </div>
+                </div>
           <?php endforeach;?>
     </div>
 </div>

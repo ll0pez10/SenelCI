@@ -71,6 +71,7 @@
         <div class="footer_third">
           <h1>Nossos eventos</h1>
           <a href="#">SENEL Online</a>
+          <a href="#">SENEL 2020</a>
           <a href="#">SENEL 2019</a>
           <a href="#">SENEL 2018</a>
         </div>

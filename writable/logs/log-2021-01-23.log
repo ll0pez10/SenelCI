@@ -114,3 +114,19 @@ CRITICAL - 2021-01-23 06:25:41 --> syntax error, unexpected end of file
 #10 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 D:\xampp\htdocs\SenelCI\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #12 {main}
+CRITICAL - 2021-01-23 06:55:27 --> Array to string conversion
+#0 D:\xampp\htdocs\SenelCI\app\Views\partials\patrocinadores.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\xampp\\htdocs...', 8, Array)
+#1 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('partials/patroc...', Array, true)
+#3 D:\xampp\htdocs\SenelCI\app\Libraries\Edicoes.php(35): view('partials/patroc...', Array)
+#4 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\View\Cell.php(156): App\Libraries\Edicoes->patrocinadores(Array)
+#5 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\Common.php(1140): CodeIgniter\View\Cell->render('\\App\\Libraries\\...', Array, 0, 'AppLibrariesEdi...')
+#6 D:\xampp\htdocs\SenelCI\app\Views\paginas\senel.php(6): view_cell('\\App\\Libraries\\...', Array)
+#7 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#8 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\Common.php(1119): CodeIgniter\View\View->render('paginas/senel', Array, true)
+#9 D:\xampp\htdocs\SenelCI\app\Controllers\Edicoes.php(9): view('paginas/senel')
+#10 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\Edicoes->edicao()
+#11 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Edicoes))
+#12 D:\xampp\htdocs\SenelCI\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp\htdocs\SenelCI\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
