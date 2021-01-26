@@ -1,4 +1,4 @@
-<div>
+<div class="row">
     <h3>missão e valores</h3>
     <div>
         <div>
@@ -31,4 +31,4 @@
             <img src="" alt="" />
         </div>
     </div>
-</div
+</div>
