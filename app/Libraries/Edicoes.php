@@ -5,6 +5,7 @@ use App\Models\DepoimentosModel;
 use App\Models\FotosModel;
 use App\Models\PatrocinadoresModel;
 use App\Models\ProgramacaoModel;
+use App\Models\TeamModel;
 
 class Edicoes{
     public function eventos(array $params=[]){
@@ -41,5 +42,14 @@ class Edicoes{
         $programacao = ['programacao'=> $programacao[0]];
         
         return view('partials/programacao', $programacao);
+    }
+
+    public function equipe(array $params=[]){
+        $model = new TeamModel();
+        $equipe = $model->findAll($params['ano']);
+
+        $equipe = ['patrocinadores'=> $equipe];
+        
+        return view('partials/patrocinadores', $equipe);
     }
 }

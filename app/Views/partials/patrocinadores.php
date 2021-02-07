@@ -2,7 +2,7 @@
     <h3>Patrocinadores</h3>
     <div class="row">
         <?php foreach($patrocinadores as $sponsor):?>
-        <div class="col-xs-1-12">
+        <div class="col-xs-1-12 p-2 my-2">
               <div class="card" style="width: 18rem;">
                 <?php 
                   $imageProperties = [
