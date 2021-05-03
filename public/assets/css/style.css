@@ -54,11 +54,30 @@ h3 {
 
 #patrocinio {
   text-align: center;
-  background-image: url("PHOTO.jpg");
-  background-color: turquoise;
+  color: aliceblue;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/home/patrocinio.png");
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
   box-sizing: border-box;
-  width: 400px;
-  height: 600px;
+  height: 400px;
+}
+
+#patrocinio h3 {
+  text-transform: uppercase;
+  line-height: 3;
+}
+
+#patrocinio h5 {
+  text-transform: capitalize;
+  line-height: 2;
+}
+
+#patrocinio p {
+  text-transform: capitalize;
+  line-height: 2;
 }
 
 /* -------------------- FOOTER --------------------*/
